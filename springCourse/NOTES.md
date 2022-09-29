@@ -12,7 +12,7 @@ So whenever you see "Spring Beans " just think Java Object!
 
 
 Inversion of Control:
-->
+-> 
 
 Spring Container:
 -> Primary functions:
@@ -46,3 +46,9 @@ Now just call methods from your Bean
 
 Now close your context using
     context.close();
+
+
+Spring takeout the Logger from Run panel , but if you whant to see just create a class
+with all Logger packages and also injet a bean at applicationContext.xml fine, and run.
+At this example you can see all details about this "MyLoggerConfig" class...
+
