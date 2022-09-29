@@ -1,3 +1,0 @@
-<bean id="myCoach" class ="com.er.springdemo.BaseballCoach">
-
-</bean>
