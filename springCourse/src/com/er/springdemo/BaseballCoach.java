@@ -7,6 +7,9 @@ public class BaseballCoach implements Coach{
     //define a privacy field for the dependency
     private FortuneService fortuneService;
 
+    public BaseballCoach() {
+    }
+
     //define the constructor for dependency injection
     public BaseballCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
