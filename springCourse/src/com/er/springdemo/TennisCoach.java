@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class TennisCoach implements Coach{
 
-    @Autowired
+
     FortuneService fortuneService;
 
     public TennisCoach(FortuneService fortuneService) {

@@ -25,4 +25,13 @@
         <property name="rootLoggerLevel" value="FINE"/>
         <property name="printedLogger" value="FINE"/>
     </bean>
+
+    <bean id="myCrickedCoach"
+          class="com.er.springdemo.CricketCoat">
+        <!-- set up setter injection
+          -->
+        <property name="fortuneService" ref="myFortune"/>
+        <property name="emailAddress" value="everton.rodrigues@hawkeyeinnovations.com"/>
+        <property name="team" value="DevelopTeam"/>
+    </bean>
 </beans>

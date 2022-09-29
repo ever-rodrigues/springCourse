@@ -1,5 +1,7 @@
 Here I will be some notes about this learning project.
 
+
+
 ->Spring Bean is a simple Java Object!
     When Java objects are created by The Spring Container, then Spring refers to them as
 "Spring Beans".
@@ -49,6 +51,18 @@ Now close your context using
 
 
 Spring takeout the Logger from Run panel , but if you whant to see just create a class
-with all Logger packages and also injet a bean at applicationContext.xml fine, and run.
+with all Logger packages and also inject a bean at applicationContext.xml fine, and run.
 At this example you can see all details about this "MyLoggerConfig" class...
+
+
+->No Args Constructor at Spring:
+    -> When you dont define any contructor in your class, compiler defines default one for you, however when 
+you declare any constructor compliler doesn`t do it for you. 
+    ->Since you have defined a constructor at your class, compiler didn`t create a default one.
+
+
+
+->Setter Injection
+    -> Capitalize first letter of property name:
+        ->setBestAthlete
 
