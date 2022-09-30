@@ -66,3 +66,12 @@ you declare any constructor compliler doesn`t do it for you.
     -> Capitalize first letter of property name:
         ->setBestAthlete
 
+
+Just to Improve this project we will use the proprieties file , 
+instead of using all values hardcode inside applicationContext.xml file.
+
+Now we can add all values inside sport.proprieties and applicatonContext 
+can get this files from proprieties file.
+
+
+
