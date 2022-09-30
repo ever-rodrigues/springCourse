@@ -11,27 +11,12 @@
     <context:property-placeholder location="classpath:sport.properties"/>
     <bean id="myFortune" class="com.er.springdemo.HappyFortuneService">
     </bean>
-    <bean id="myCoach" class="com.er.springdemo.BaseballCoach">
+    <bean id="myCoach" class="com.er.springdemo.BaseballCoach"
+        scope="prototype">
         <!--
         Setup constructor injection
         -->
         <constructor-arg ref="myFortune"/>
     </bean>
 
-    <!--
-    Add the Logger config to see logging messages at Run panel
-    -->
-    <bean id ="myLoggerConfig" class="com.er.springdemo.MyLoggerConfig" init-method="initLogger">
-        <property name="rootLoggerLevel" value="FINE"/>
-        <property name="printedLogger" value="FINE"/>
-    </bean>
-
-    <bean id="myCrickedCoach"
-          class="com.er.springdemo.CricketCoat">
-        <!-- set up setter injection-->
-        <property name="fortuneService" ref="myFortune"/>
-        <!-- Injection literal values-->
-        <property name="emailAddress" value="${foo.email}"/>
-        <property name="team" value="${foo.team}"/>
-    </bean>
 </beans>

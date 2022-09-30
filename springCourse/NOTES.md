@@ -75,3 +75,34 @@ can get this files from proprieties file.
 
 
 
+
+->Bean (Lifesycle of a Bean)
+    ->Singleton?
+        ->Spring creates only one instance of the Beay
+            Ex: contect.getBean("myCoach, Coach.class);
+        Only one Bean and share to everyone( Only one part of memori will be used)
+
+->Prototype ( Creates a beans instance for each container request. 
+(Prototype scope is goog to get tracking stateful data) 
+    <bean id="myCoach" 
+        class ="com.er.springdemo.TrackCoach"
+        scope="prototype">
+    </bean>
+
+Sojust to be clear, when you create a bean with scope="prototype" all the beans will be in distinct memory
+location, this means you will be Beans diferens at each instance of it...
+    ->SO NEW OBJECT FOR EACH REFERENCE!
+
+
+Bean Lifesycle 
+
+    Container started-> Bean Insntancied ->Dependencies injected -> 
+    -> Internal Spring Procesing -> Your Custom Init Methods
+
+    About init-mehtod and destroy-method
+        -> The Return type ->Void is the most commonly used.
+        -> The method can have any method-name
+        ->The methods can not accept arguments .  The method should be no-args.
+
+
+
