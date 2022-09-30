@@ -1,5 +1,5 @@
 Here I will be some notes about this learning project.
-
+XML CONFIGURATION IN VERBOSE!!!
 
 
 ->Spring Bean is a simple Java Object!
@@ -103,6 +103,11 @@ Bean Lifesycle
         -> The Return type ->Void is the most commonly used.
         -> The method can have any method-name
         ->The methods can not accept arguments .  The method should be no-args.
+OBSERVATION: 
+For prototype scpped beans, Spring does not call the destroy method!
 
+In contrast to the other scopes, Spring does not manage the complete lifecycle of a prototype bean. 
+So using prototype you need to implemente DisposableBean to get a destroy() method from the implementation
+to destroy the bean using scope ="prototype". 
 
 

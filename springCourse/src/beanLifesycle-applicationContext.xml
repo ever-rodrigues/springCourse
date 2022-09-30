@@ -19,5 +19,13 @@
         -->
         <constructor-arg ref="myFortune"/>
     </bean>
+    <!--
+    Setup constructor injection
+    -->
+    <bean id="customProcessor" class="com.er.springdemo.TrackCoach"
+    init-method="doMyStartStuff"
+    scope="prototype">
+
+    </bean>
 
 </beans>
